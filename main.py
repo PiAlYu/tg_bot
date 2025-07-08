@@ -118,7 +118,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # === ГЛАВНАЯ ФУНКЦИЯ ===
 
 def main():
-    TOKEN = "7728246732:AAEZQHfP5-5rudq__beXrcugfUH3dBqEwiw"  # Или вставь строкой: TOKEN = "123456:ABC..."
+    TOKEN = os.getenv("BOT_TOKEN")  # Или вставить строкой
 
     app = ApplicationBuilder().token(TOKEN).build()
 
